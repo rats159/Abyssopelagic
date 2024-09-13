@@ -1,0 +1,160 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_1"
+      },
+      "when": {
+        "facing": "north",
+        "mushroom_count": "1|2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_1",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "mushroom_count": "1|2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_1",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "mushroom_count": "1|2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_1",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "mushroom_count": "1|2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_2"
+      },
+      "when": {
+        "facing": "north",
+        "mushroom_count": "2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_2",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "mushroom_count": "2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_2",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "mushroom_count": "2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_2",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "mushroom_count": "2|3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_3"
+      },
+      "when": {
+        "facing": "north",
+        "mushroom_count": "3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_3",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "mushroom_count": "3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_3",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "mushroom_count": "3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_3",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "mushroom_count": "3|4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_4"
+      },
+      "when": {
+        "facing": "north",
+        "mushroom_count": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_4",
+        "y": 90
+      },
+      "when": {
+        "facing": "east",
+        "mushroom_count": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_4",
+        "y": 180
+      },
+      "when": {
+        "facing": "south",
+        "mushroom_count": "4"
+      }
+    },
+    {
+      "apply": {
+        "model": "abyssopelagic:block/glow_shroom_4",
+        "y": 270
+      },
+      "when": {
+        "facing": "west",
+        "mushroom_count": "4"
+      }
+    }
+  ]
+}

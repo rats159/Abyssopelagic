@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"dev.rats159.abyssopelagic.AbyssopelagicClient"
+		],
+		"terrablender": [
+			"dev.rats159.abyssopelagic.worldgen.biomes.AbyssopelagicTerrablender"
 		]
 	},
 	"mixins": [

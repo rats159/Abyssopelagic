@@ -1,5 +1,6 @@
 package dev.rats159.abyssopelagic;
 
+import dev.rats159.abyssopelagic.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +12,6 @@ public class Abyssopelagic implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModBlocks.initialize();
 	}
 }
