@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "abyssopelagic",
+	"version": "${version}",
+	"name": "Abyssopelagic",
+	"description": "ocean mod",
+	"authors": [
+		"rats159"
+	],
+	"contact": {
+		"homepage": "https://rats159.dev/",
+		"sources": "https://github.com/rats159/abyssopelagic"
+	},
+	"license": "MIT",
+	"icon": "assets/abyssopelagic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.rats159.abyssopelagic.Abyssopelagic"
+		],
+		"fabric-datagen": [
+			"dev.rats159.abyssopelagic.AbyssopelagicDataGenerator"
+		],
+		"client": [
+			"dev.rats159.abyssopelagic.AbyssopelagicClient"
+		]
+	},
+	"mixins": [
+		"abyssopelagic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
