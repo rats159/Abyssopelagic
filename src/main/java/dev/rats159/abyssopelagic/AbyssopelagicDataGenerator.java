@@ -3,6 +3,7 @@ package dev.rats159.abyssopelagic;
 import dev.rats159.abyssopelagic.datagen.ModWorldGenerator;
 import dev.rats159.abyssopelagic.datagen.ModelGenerator;
 import dev.rats159.abyssopelagic.worldgen.biomes.ModBiomes;
+import dev.rats159.abyssopelagic.worldgen.biomes.ModFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
@@ -19,5 +20,7 @@ public class AbyssopelagicDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModFeatures::bootstrapConfigured);
+		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModFeatures::bootstrapPlaced);
 	}
 }

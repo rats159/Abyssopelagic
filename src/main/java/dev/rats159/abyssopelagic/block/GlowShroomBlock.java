@@ -53,6 +53,16 @@ private static final BiFunction<Direction, Integer, VoxelShape> FACING_AND_AMOUN
       return !context.shouldCancelInteraction() && context.getStack().isOf(this.asItem()) && state.get(MUSHROOM_COUNT) < 4 || super.canReplace(state, context);
    }
 
+    @Override
+    protected boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
+        BlockPos blockPos = pos.down();
+        return this.canPlantOnTop(world.getBlockState(blockPos), world, blockPos);
+    }
+
+    protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
+        return floor.isOpaqueFullCube(world, pos);
+    }
+
    @Override
    public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
       return FACING_AND_AMOUNT_TO_SHAPE.apply(state.get(FACING), state.get(MUSHROOM_COUNT));
