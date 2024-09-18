@@ -1,4 +1,6 @@
-// 1.21.1	2024-09-16T00:30:49.3680201	Abyssopelagic/World Gen
+// 1.21.1	2024-09-17T13:03:59.7491435	Abyssopelagic/World Gen
 08e7152d0ff0c5efb0709dc9a6c982d7b6eb92e1 data\abyssopelagic\worldgen\configured_feature\glow_shroom.json
 c1a18c50e39c1055f7c41290b9e9b1d1f601c8fa data\abyssopelagic\worldgen\placed_feature\glow_shroom.json
-7d91013f51146125b507af564cff0d14d489c126 data\abyssopelagic\worldgen\biome\abyssal_caves.json
+edadae535d61b214aba59ab03f658d922c0abd28 data\abyssopelagic\worldgen\biome\abyssal_caves.json
+7382f4e99a5c4632e985ee7eb9fd4612b96649ae data\abyssopelagic\worldgen\placed_feature\glow_tendril.json
+d9939ed8028f13ebbd155696a5b24eca41767972 data\abyssopelagic\worldgen\configured_feature\glow_tendril.json

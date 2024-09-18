@@ -11,26 +11,57 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-   public static final Block ABYSSAL_ROCK = createBlock("abyssal_rock", new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE)));
-   public static final Block GLOW_SHROOM = createBlock("glow_shroom", new GlowShroomBlock(settings().mapColor(MapColor.BRIGHT_TEAL).noCollision().sounds(BlockSoundGroup.HONEY).pistonBehavior(PistonBehavior.DESTROY).luminance((state) -> state.get(ModProperties.MUSHROOM_COUNT) * 2 + 2)));
+    public static final Block ABYSSAL_ROCK = createBlock("abyssal_rock",
+            new Block(AbstractBlock.Settings.copy(Blocks.DEEPSLATE)));
+    public static final Block GLOW_SHROOM = createBlock("glow_shroom",
+            new GlowShroomBlock(settings().mapColor(MapColor.BRIGHT_TEAL)
+                    .noCollision()
+                    .sounds(BlockSoundGroup.HONEY)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+                    .luminance((state) -> state.get(ModProperties.MUSHROOM_COUNT) * 2 + 2)));
+    public static final Block GLOW_TENDRILS = createBlock("glow_tendrils",
+            new GlowTendrilsBlock(
+                settings()
+                    .mapColor(MapColor.DARK_GREEN)
+                    .ticksRandomly()
+                    .noCollision()
+                    .luminance(CaveVines.getLuminanceSupplier(14))
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.CAVE_VINES)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
 
+    public static final Block GLOW_TENDRILS_PLANT = createBlock("glow_tendrils_plant",
+            new GlowTendrilsPlantBlock(
+                settings()
+                    .mapColor(MapColor.DARK_GREEN)
+                    .ticksRandomly()
+                    .noCollision()
+                    .luminance(CaveVines.getLuminanceSupplier(14))
+                    .breakInstantly()
+                    .sounds(BlockSoundGroup.CAVE_VINES)
+                    .pistonBehavior(PistonBehavior.DESTROY)
+            ),
+            false
+    );
 
-   private static Block createBlock(String name, Block block) {
-      return createBlock(name, block, true);
-   }
+    private static Block createBlock(String name, Block block) {
+        return createBlock(name, block, true);
+    }
 
-   private static Block createBlock(String name, Block block, boolean shouldMakeItem) {
-      Identifier id = Identifier.of(Abyssopelagic.MOD_ID, name);
-      if (shouldMakeItem) {
-         Registry.register(Registries.ITEM, id, new BlockItem(block, new Item.Settings()));
-      }
-      return Registry.register(Registries.BLOCK, id, block);
-   }
+    private static Block createBlock(String name, Block block, boolean shouldMakeItem) {
+        Identifier id = Identifier.of(Abyssopelagic.MOD_ID, name);
+        if (shouldMakeItem) {
+            Registry.register(Registries.ITEM, id, new BlockItem(block, new Item.Settings()));
+        }
+        return Registry.register(Registries.BLOCK, id, block);
+    }
 
-   private static AbstractBlock.Settings settings() {
-      return AbstractBlock.Settings.create();
-   }
+    private static AbstractBlock.Settings settings() {
+        return AbstractBlock.Settings.create();
+    }
 
-   public static void initialize() {
-   }
+    public static void initialize() {
+    }
 }

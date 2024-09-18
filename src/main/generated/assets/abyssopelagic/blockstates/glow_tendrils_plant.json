@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "berries=false": {
+      "model": "abyssopelagic:block/glow_tendrils_plant"
+    },
+    "berries=true": {
+      "model": "abyssopelagic:block/glow_tendrils_plant_lit"
+    }
+  }
+}

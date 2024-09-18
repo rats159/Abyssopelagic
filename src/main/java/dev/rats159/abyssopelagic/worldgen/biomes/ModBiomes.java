@@ -1,17 +1,15 @@
 package dev.rats159.abyssopelagic.worldgen.biomes;
 
+import dev.rats159.abyssopelagic.worldgen.biomes.features.ModFeatures;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BiomeMoodSound;
 import net.minecraft.sound.MusicSound;
-import net.minecraft.sound.MusicType;
-import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.*;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.carver.ConfiguredCarvers;
-import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 import org.jetbrains.annotations.Nullable;
 
 import static dev.rats159.abyssopelagic.Abyssopelagic.MOD_ID;
@@ -27,11 +25,6 @@ public class ModBiomes {
         context.register(ABYSSAL_CAVES, abyssalCaves(context));
     }
 
-    public static void globalOverworldGeneration(GenerationSettings.LookupBackedBuilder builder) {
-        DefaultBiomeFeatures.addLandCarvers(builder);
-        DefaultBiomeFeatures.addMelons(builder);
-    }
-
     public static Biome abyssalCaves(Registerable<Biome> context) {
         SpawnSettings.Builder spawnSettings = new SpawnSettings.Builder();
         GenerationSettings.LookupBackedBuilder biomeSettings = new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE), context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
@@ -41,6 +34,7 @@ public class ModBiomes {
         biomeSettings.carver(GenerationStep.Carver.AIR, ConfiguredCarvers.CANYON);
 
         ModFeatures.addGlowMushrooms(biomeSettings);
+        ModFeatures.addGlowTendrils(biomeSettings);
 
         return createBiome(true, 0.8F, 0.4F, spawnSettings, biomeSettings, null);
     }

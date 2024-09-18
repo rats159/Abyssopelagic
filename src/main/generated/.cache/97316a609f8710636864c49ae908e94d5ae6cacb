@@ -1,4 +1,11 @@
-// 1.21.1	2024-09-16T00:30:49.3700183	Abyssopelagic/Model Definitions
+// 1.21.1	2024-09-17T13:03:59.7526446	Abyssopelagic/Model Definitions
 b66bfe20c0cd89a1d59b1d851e44e3ba68e3f1cc assets\abyssopelagic\models\block\abyssal_rock.json
+c5d1a8e38b38332a64df34a74d34066e4b856114 assets\abyssopelagic\models\block\glow_tendrils_plant.json
 10581e787e0e88a4097639ff4459f28f1b5d9299 assets\abyssopelagic\models\item\abyssal_rock.json
+ed088fdc0e91baf1afb7f35eafaa2c6fc44cc336 assets\abyssopelagic\models\block\glow_tendrils.json
+ac5c1abe19e5d9b87fc76bde1f03ce375f3dcbf7 assets\abyssopelagic\blockstates\glow_tendrils.json
+a8f30e746a74bf149b7fc7e17931f99eb00a5a0b assets\abyssopelagic\blockstates\glow_tendrils_plant.json
+3fb956dc9d8982bc2c8a9cd2abcd3c8f31d6a991 assets\abyssopelagic\models\item\glow_tendrils.json
+540e86b097f8beb905b3cd9bdd1de4bdd1cac057 assets\abyssopelagic\models\block\glow_tendrils_plant_lit.json
 21238c8fdfc043b4a84799b4037da5090943bd1e assets\abyssopelagic\blockstates\abyssal_rock.json
+05d50dbde3771a8a87f1ecb23568568afedf261b assets\abyssopelagic\models\block\glow_tendrils_lit.json
